@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    /* Image background stuff */
+    /* will replace bg image with office */
+
+    /* background-image: url(city\ index\ image.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+}
+
+nav{
+    /* Deep purple */
+    /* background-color: rgba(131,76,191,255); */
+    /* White */
+    position: relative;
+    background-color: white; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 60px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    /* Grey hover colour */
+    /* background-color: lightgrey; */
+    /* Light purple hover colour */
+    background-color: rgba(183,137,186,255);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+.mobileLogo{
+    display: none;  /* Hide by default */
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;    
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+.hero-section{
+    /* <a href="http://www.freepik.com">Designed by Harryarts / Freepik</a> */
+    background-image: url(purplebackground\ \(2\).jpg);
+    width: 100%;
+    height: 100vh;
+    background-image: no-repeat;
+    background-size: cover;
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.hero-content{
+    width: 50%;
+    padding-right: 20px;
+    max-width: 600px;
+}
+
+.hero-section h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    width: 400px;
+    text-transform: capitalize;
+
+}
+
+span{
+    color: rgba(118,65,143,255);
+}
+
+.hero-section p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 309px;
+    padding: 30px 0px;
+}
+
+.hero-section button{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    border-radius: 50px;
+    width: 135px;
+    height: 65px;
+    background-color: rgba(118,65,143,255);
+    border: none;
+}
+
+.hero-section button:hover{
+    background-color: rgb(193,164,204);
+}
+
+.hero-image{
+    margin-left: 20px; 
+    width: 25%;
+}
+
+.hero-image img{
+    max-width: 100%; 
+    width: 200px; 
+    height: auto;
+    margin-left:0; 
+}
+
+.footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .footer_third{
+    width: calc(21.6666666666667%-20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+}
+
+.inner_footer .footer_third h2{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+    display: black;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 200px;
+    color: white;
+    display: black;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* scuffed mobile responsiveness */
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .mobileLogo{
+        display: flex;
+    }
+    .menu-button{
+        display: block;
+    }
+    .hero-section {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-top: 20px;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .hero-img img {
+        max-width: 200px;
+    }
+
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    .hero-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .hero-text {
+        width: 100%;  
+        text-align: center;  
+    }
+
+    .hero-image {
+        margin-top: 20px; 
+        width: 100%;  
+        max-width: 150px;  
+    }
+
+    .hero-section h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Hide the image and only show text on very small screens */
+    .hero-img {
+        display: none;
+    }
+
+    /* Adjust the hero content on smaller screens */
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-section h1 {
+        font-size: 20px;
+    }
+}
