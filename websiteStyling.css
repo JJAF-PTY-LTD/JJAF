@@ -101,21 +101,21 @@ html, body{
 .hero-section{
     /* <a href="http://www.freepik.com">Designed by Harryarts / Freepik</a> */
     background-image: url(purplebackground\ \(2\).jpg);
-    width: 100%;
+    max-width: 100%;
     height: 825px;
     background-image: no-repeat;
     background-size: cover;
-    padding: 0px 5%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     box-shadow: -10px 0 10px rgb(0,0,0,0.1) ;
     z-index: 1;
+    padding: 2em;
 }
 
 .hero-content{
     width: 50%;
-    padding-right: 20px;
+    padding: 0 2em;
     max-width: 600px;
 }
 
@@ -125,7 +125,6 @@ html, body{
     font-size: 64px;
     width: 400px;
     text-transform: capitalize;
-
 }
 
 span{
@@ -170,7 +169,7 @@ span{
 
 .footer{
     background-color: rgba(118,65,143,255);
-    padding: 70px 0;
+    padding: 2em 0;
 }
 
 .footer-col{
@@ -247,18 +246,25 @@ span{
     }
     .hero-section {
         flex-direction: column;
-        padding: 0 5%;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero-content {
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .hero-img {
         margin-top: 20px;
         width: 80%;
         margin-left: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .hero-img img {
@@ -291,7 +297,8 @@ span{
     }
 
     .hero-section h1 {
-        font-size: 20px;
+        font-size: 2em;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -301,12 +308,4 @@ span{
         display: none;
     }
 
-    /* Adjust the hero content on smaller screens */
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero-section h1 {
-        font-size: 20px;
-    }
 }
