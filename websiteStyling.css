@@ -108,7 +108,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: -10px 0 10px rgb(0,0,0,0.1) ;
+    box-shadow: 10px 20px 10px rgb(0,0,0,0.1) ;
     z-index: 1;
     padding: 2em;
 }
@@ -167,6 +167,133 @@ span{
     margin-left:0; 
 }
 
+.services{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(253, 243, 253);
+    border-radius: 2%;
+    box-shadow: 0 5% 1% rgba(0, 0, 0, 0.1);
+}
+.services h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 180%;
+    color: white;
+    backdrop-filter: blur(10px);
+    background-color: #76408c;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.services ul {
+    list-style-type: none; 
+    padding-left: 5%;
+    font-size: 2vh;
+}
+
+.services li {
+    font-size: 3vh;
+    color: black;
+    padding-top: 0.5%;
+    /* padding-left: 10%; */
+    padding-bottom: 2%;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.services li::before{
+    content: "✔"; 
+    position: absolute;
+    /* left: 6.5%; */
+    left: 0;
+    color: green;
+    font-weight: bold;
+    padding-right: 5%;
+}
+
+.image-container {
+    display: flex;
+    background-color: rgb(253, 243, 253);
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Aligns images vertically */
+    gap: 10%; /* Adds space between images */
+    padding: 5%;
+}
+
+.image-container img {
+    height: 90px; /* Set a uniform height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.section{
+   padding: 5%; 
+}
+
+.custom-shape-divider-top-1742045798 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.cool-section {
+    position: relative;
+    background: linear-gradient(45deg, #b889bb,#9c74ac ); /* Gradient background */
+    color: white; /* White text */
+    padding: 10vh ;
+    text-align: center;
+    height: 35vh;
+}
+
+/* Wrapper for the section */
+.find-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Left side: Location information */
+.location-info {
+    width: 100%; /* Take up 45% of the container */
+}
+
+.location-info h2 {
+    font-size: 3vh;
+    color: white;
+    margin-bottom: 2vh;
+    text-align: left;
+}
+
+.location-info p,
+.location-info address {
+    font-size: 2vh;
+    color: white;
+    text-align: left;
+}
+
+.location-info address {
+    font-style: normal; /* Makes the address look normal */
+    line-height: 1.5;
+}
+
+/* Right side: Google Map */
+.map-container {
+    width: 1000vh;
+    height: 50vh /* Take up 50% of the container */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 40vh;
+    border-radius: 5%;
+    padding-left: 2%;
+}
+
+
+
 .footer{
     background-color: rgba(118,65,143,255);
     padding: 2em 0;
@@ -219,7 +346,6 @@ span{
 
 .footer-col ul li a{
     font-size: 16px;
-    text-transform: capitalize;
     color: white;
     font-weight: 300;
     color: white;
@@ -261,7 +387,7 @@ span{
 
     .hero-img {
         margin-top: 20px;
-        width: 80%;
+        width: 100%;
         margin-left: 0;
         display: flex;
         justify-content: center;
@@ -308,4 +434,26 @@ span{
         display: none;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    /* Hide all images by default */
+    .image-container img {
+        display: none;
+    }
+
+    /* Display the second image (middle image) in the center */
+    .image-container img:nth-child(1) {
+        display: block;
+        margin: 0 auto; /* Center the image */
+        width: 50%; /* Adjust size if needed */
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .map-container iframe {
+        height: 80%; /* Square map for smaller screens */
+        display: none;
+    }
 }
