@@ -296,8 +296,7 @@ span{
     max-width: 100%;
     margin: 0 auto; /* Center it */
     background-color: rgb(253, 243, 253); /* Same background as .services */
-    border-radius: 2%;
-    box-shadow: 0 5% 1% rgba(0, 0, 0, 0.1);
+    box-shadow: 50% 50% 10% rgba(0, 0, 0, 0.1);
     padding: 5%; /* Adds spacing so content inside doesn’t touch edges */
     position: relative; /* Ensures H1 positioning works properly */
 }
