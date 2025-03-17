@@ -22,7 +22,7 @@ nav{
     /* White */
     position: relative;
     background-color: white; 
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2) !important;
 
 }
 
@@ -308,15 +308,14 @@ span{
     font-size: 180%;
     color: rgba(118,65,143,255);
     backdrop-filter: blur(10px);
-    background-color: rgb(253, 243, 253);
-    padding: 2%;
+    /* background-color: rgb(253, 243, 253); */
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
 .allPage p{
     font-size: 3vh;
-    padding: 0.5%;
+    margin-bottom: 1%;
 }
 
 .allPage ul {
