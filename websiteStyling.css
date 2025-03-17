@@ -292,6 +292,71 @@ span{
     padding-left: 2%;
 }
 
+.allPage {
+    max-width: 100%;
+    margin: 0 auto; /* Center it */
+    background-color: rgb(253, 243, 253); /* Same background as .services */
+    border-radius: 2%;
+    box-shadow: 0 5% 1% rgba(0, 0, 0, 0.1);
+    padding: 5%; /* Adds spacing so content inside doesn’t touch edges */
+    position: relative; /* Ensures H1 positioning works properly */
+}
+
+.allPage h1{
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 180%;
+    color: rgba(118,65,143,255);
+    backdrop-filter: blur(10px);
+    background-color: rgb(253, 243, 253);
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.allPage p{
+    font-size: 3vh;
+    padding: 0.5%;
+}
+
+.allPage ul {
+    margin-top: 1%; /* Space above the list */
+    margin-bottom: 2%; /* Space below the list */
+}
+
+.allPage li {
+    font-size: 3vh; /* Match paragraph font size */
+    padding: 0.5%; /* Consistent padding like <p> */
+    list-style-type: none; /* Keeps default bullet points */
+}
+
+.allPage a {
+    color: #76408c; /* Match theme color */
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold; /* Make it stand out */
+}
+
+.allPage a:hover {
+    text-decoration: underline; /* Add underline when hovered */
+    color: #9c74ac; /* Slightly lighter color on hover */
+    text-decoration: none;
+}
+
+.hours-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers both horizontally and vertically */
+    margin-top: 2%;
+}
+
+.hours {
+    flex: 1; /* Allows the hours section to take available space */
+}
+
+.office-image {
+    flex: 0 0 auto; /* Prevents the image from growing */
+    width: 45%; /* Adjust width as needed */
+}
 
 
 .footer{
@@ -431,6 +496,10 @@ span{
 @media (max-width: 500px) {
     /* Hide the image and only show text on very small screens */
     .hero-img {
+        display: none;
+    }
+
+    .office-image {
         display: none;
     }
 
