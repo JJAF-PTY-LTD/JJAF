@@ -340,6 +340,46 @@ span{
     text-decoration: none;
 }
 
+.aboutPage {
+    max-width: 100%;
+    margin: 0 auto; /* Center it */
+    background-color: rgb(253, 243, 253); /* Same background as .services */
+    box-shadow: 50% 50% 10% rgba(0, 0, 0, 0.1);
+    padding: 5%; /* Adds spacing so content inside doesn’t touch edges */
+    position: relative; /* Ensures H1 positioning works properly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutPage h1{
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 180%;
+    color: rgba(118,65,143,255);
+    backdrop-filter: blur(10px);
+    /* background-color: rgb(253, 243, 253); */
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.aboutPage p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3vh;
+    margin-bottom: 2%; 
+}
+
+.aboutPage img {
+    width: 50vh; /* Adjust width */
+    height: 50vh; /* Adjust height */
+    border-radius: 20%; /* Makes it a pill shape */
+    object-fit: cover; /* Ensures the image fills the shape properly */
+}
+
+
 .hours-container {
     display: flex;
     justify-content: space-between;
@@ -522,5 +562,11 @@ span{
     .map-container iframe {
         height: 80%; /* Square map for smaller screens */
         display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutPage {
+        text-align: left;
     }
 }
