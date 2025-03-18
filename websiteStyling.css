@@ -113,6 +113,13 @@ html, body{
     padding: 2em;
 }
 
+.image-attribution {
+    text-align: center;
+    font-size: 1px;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
 .hero-content{
     width: 50%;
     padding: 0 2em;
